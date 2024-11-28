@@ -1,0 +1,275 @@
+import QtQuick 2.15
+import QtQuick.Controls 2.5
+import "../assembly"
+
+Rectangle
+{
+    readonly property real singleWarningHeight: 96 //单个警报高度
+    readonly property real listHeight: 96*4+8*3 //报警列表总高度
+    property string firstAlarmText:"";// "! ! ! 电量过低"//文字框内容
+    property real firstAlarmType:0;//警报类型 0:错误 1:警告
+    property bool viewVisible: false
+    property string numbers: "1";
+    property var footHandle : null;
+    id:root
+    width: 547
+    height: singleWarningHeight
+    color: "transparent"
+    SerialNumber
+    {
+        id:number
+        z:1
+        serialNumberTextContent:numbers
+        serialNumberVisible: false
+        anchors.left: parent.left
+        anchors.leftMargin: 12
+        anchors.top: parent.top
+        anchors.topMargin: 25
+        onSerialNumberTextContentChanged:
+        {
+            if(serialNumberTextContent=="0")
+            {
+                serialNumberVisible=false;
+            }
+            else
+            {
+                serialNumberVisible=true;
+                view.visible=true;
+            }
+        }
+    }
+    function setNumber(number)
+    {
+        numbers=number.toString();
+    }
+    function setSerialNumberVisible(visible)
+    {
+        number.serialNumberVisible=visible;
+    }
+    Alarm
+    {
+        id:firstWarning
+        anchors.fill: parent
+        alarmTextContent:firstAlarmText// "! ! ! 电量过低"//文字框内容
+        alarmType:firstAlarmType//警报类型 0:错误 1:警告
+    }
+
+    MouseArea
+    {
+        id:mouseList
+        anchors.fill: parent
+        onClicked:
+        {
+            pop.open();
+            firstWarning.visible=false;
+            setNumber(0);
+        }
+    }
+    Popup
+    {
+        id:pop
+        width:root.width
+        height: listMode.count>=4?listHeight:96*listMode.count+(listMode.count-1)*8
+        margins:0
+        padding:0
+        background: Rectangle
+        {
+            color:"transparent"
+        }
+        onVisibleChanged:
+        {
+            firstWarning.visible=true;
+        }
+        ListModel
+        {
+            id:listMode
+            function refresh()
+            {
+                listMode.clear();
+                for(var i=0;i<2;i++)
+                {
+                    listMode.append({alarmTextContent:"! ! ! 电量过低",alarmType:1});
+                }
+            }
+            function loadMore()
+            {
+                if(canLoad())
+                {
+                    for(var i=0;i<20;i++)
+                    {
+                        listMode.append({alarmTextContent:"! ! ! 流量过低",alarmType:0});
+                    }
+                }
+            }
+            function canLoad()
+            {
+                if(count>30)
+                {
+                    return false;
+                }
+                return true;
+            }
+        }
+        //刷新
+        Timer
+        {
+            id:timerRefresh
+            interval: 1000
+            onTriggered: {
+                listMode.refresh();
+                view.headerVisible=false;
+            }
+        }
+        //加载
+        Timer
+        {
+            id:timerLoadMore
+            interval: 1000
+            onTriggered: {
+                listMode.loadMore();
+                view.footerVisible=false;
+            }
+        }
+        Component
+        {
+            id:delegateAlarm
+            Alarm{}
+        }
+        PullListRunRecord
+        {
+            id:view
+            anchors.fill: parent
+            model:listMode
+            delegate: delegateAlarm
+            visible: true
+            spacing: 8
+            Component
+            {
+                id:cmpHeader
+                Rectangle
+                {
+                    id:rectHeader
+                    width: view.width
+                    height: 48
+                    color:"transparent"
+                    Text {
+                        id: txtHeader
+                        text: view.headerHold?"正在刷新中...":""
+                        font.family: "OPPOSans"
+                        font.weight: Font.Medium
+                        font.pixelSize: 24
+                        color:"#FFFFFF"
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.bottom: parent.bottom
+                        anchors.bottomMargin: 5
+                    }
+                }
+            }
+            header: headerVisible?cmpHeader:null
+            onHeaderHoldChanged:
+            {
+                if(headerHold)
+                    timerRefresh.start();
+            }
+            Component
+            {
+                id:cmpFooter
+                Rectangle
+                {
+                    id:rectFooter
+                    width: view.width
+                    height: 78
+                    color: "transparent"
+                    Text {
+                        id: txtFooter
+                        text: "正在刷新中..."
+                        font.family: "OPPOSans"
+                        font.weight: Font.Medium
+                        font.pixelSize: 24
+                        color: "#FFFFFF"
+                        anchors.bottom: parent.bottom
+                        anchors.bottomMargin: 22
+                        anchors.horizontalCenter: parent.horizontalCenter
+                    }
+                }
+            }
+            Component
+            {
+                id:lastFooter
+                Rectangle
+                {
+                    id:rectFooter
+                    width: view.width
+                    height: 40
+                    color: "#EBEBEB"
+                    Text {
+                        id: txtFooter
+                        text: "《"
+                        rotation: 90
+                        font.family: "OPPOSans"
+                        font.weight: Font.Medium
+                        font.pixelSize: 24
+                        color: "#FFFFFF"
+                        anchors.bottom: parent.bottom
+                        anchors.bottomMargin: 22
+                        anchors.horizontalCenter: parent.horizontalCenter
+                    }
+                    MouseArea
+                    {
+                        id:mouse
+                        anchors.fill: parent
+                        onClicked:
+                        {
+                            view.currentIndex=0;
+                            view.contentY=0;
+                        }
+                    }
+                }
+
+            }
+
+            footer:footerVisible?cmpFooter:null
+            onFooterHoldChanged:
+            {
+                if(footerHold)
+                    timerLoadMore.start();
+            }
+            ScrollBar.vertical: ScrollBar
+            {
+                id:scrollbar
+                width:16
+                height:pop.height
+                policy:ScrollBar.AlwaysOn
+                anchors.left:view.right
+                anchors.leftMargin:5
+                background:Rectangle
+                {
+                    id:backRect
+                    width:10
+                    height:pop.height
+                    color:"#2C2C2C"
+                    anchors.horizontalCenter:parent.horizontalCenter
+                }
+                contentItem:Rectangle
+                {
+                    id:faceRect
+                    height:24
+                    color:"#D9D9D9"
+                    radius:8
+
+                }
+            }
+            Component.onCompleted:
+            {
+                listMode.refresh();
+                if(listMode.count>0)
+                {
+                    var modelfirst=listMode.get(0);
+                    firstAlarmText=modelfirst.alarmTextContent;
+                    firstAlarmType=modelfirst.alarmType;
+                }
+            }
+
+        }
+    }
+}

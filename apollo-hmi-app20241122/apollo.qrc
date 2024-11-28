@@ -1,0 +1,393 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fileQml/main.qml</file>
+        <file>fileQml/mainFrame/MainToolBar.qml</file>
+        <file>fileQml/homePage/MainFlowShow.qml</file>
+        <file>fileQml/homePage/HomePage.qml</file>
+        <file>fileQml/homePage/HomeOptSpeed.qml</file>
+        <file>fileQml/homePage/HomeSpeedShow.qml</file>
+        <file>fileQml/mainFrame/assembly/Alarm.qml</file>
+        <file>fileQml/mainFrame/assembly/CustomBattery.qml</file>
+        <file>fileQml/mainFrame/assembly/CustomDateTime.qml</file>
+        <file>fileQml/mainFrame/assembly/CustomFooter.qml</file>
+        <file>fileQml/mainFrame/assembly/CustomLine.qml</file>
+        <file>fileQml/mainFrame/assembly/Customspacing.qml</file>
+        <file>fileQml/mainFrame/assembly/GroupBatterys.qml</file>
+        <file>fileQml/mainFrame/assembly/Mute.qml</file>
+        <file>fileQml/mainFrame/assembly/ToolBarBtn.qml</file>
+        <file>fileQml/mainFrame/assembly/GradientToolBtn.qml</file>
+        <file>fileQml/mainFrame/assembly/CustomBtn.qml</file>
+        <file>fileQml/warnings/WarningSetPage.qml</file>
+        <file>fileQml/warnings/publicAssembly/CustomSetButton.qml</file>
+        <file>fileQml/warnings/subcontral/WarningSetControl.qml</file>
+        <file>fileQml/warnings/warningpages/FlowWarningSetPage.qml</file>
+        <file>fileQml/warnings/warningpages/SpeedWarningSetPage.qml</file>
+        <file>fileQml/mainFrame/assembly/CustomComboBox.qml</file>
+        <file>fileQml/mainFrame/assembly/CustomProcess.qml</file>
+        <file>fileQml/mainFrame/assembly/CustomSingleSelectButton.qml</file>
+        <file>fileQml/mainFrame/assembly/ExportDataButton.qml</file>
+        <file>fileQml/mainFrame/assembly/PublicConstText.qml</file>
+        <file>fileQml/mainFrame/assembly/PublicTextInputRectangle.qml</file>
+        <file>fileQml/mainFrame/subcontral/L_Min.qml</file>
+        <file>fileQml/mainFrame/subcontral/LeftMenu.qml</file>
+        <file>fileQml/mainFrame/subcontral/RPM.qml</file>
+        <file>fileQml/mainFrame/subcontral/RunTime.qml</file>
+        <file>fileQml/mainFrame/subpage/DeviceRunInfo.qml</file>
+        <file>fileQml/settings/SetPage.qml</file>
+        <file>fileQml/settings/settingpages/DeviceInfoPage.qml</file>
+        <file>fileQml/settings/settingpages/HightLevelSetPage.qml</file>
+        <file>fileQml/settings/settingpages/PatientInfoPage.qml</file>
+        <file>fileQml/settings/settingpages/SystemSetPage.qml</file>
+        <file>fileQml/settings/subcontral/AgeInput.qml</file>
+        <file>fileQml/settings/subcontral/BloodType.qml</file>
+        <file>fileQml/settings/subcontral/BrightnessBar.qml</file>
+        <file>fileQml/settings/subcontral/DayComboBox.qml</file>
+        <file>fileQml/settings/subcontral/DeviceCompanyName.qml</file>
+        <file>fileQml/settings/subcontral/DeviceCompanyPhone.qml</file>
+        <file>fileQml/settings/subcontral/DeviceControlPanelSoftwareVersion.qml</file>
+        <file>fileQml/settings/subcontral/DeviceModelName.qml</file>
+        <file>fileQml/settings/subcontral/DeviceMotherboardSoftwareVersion.qml</file>
+        <file>fileQml/settings/subcontral/DeviceName.qml</file>
+        <file>fileQml/settings/subcontral/DeviceSerialNumber.qml</file>
+        <file>fileQml/settings/subcontral/ExportDataButton.qml</file>
+        <file>fileQml/settings/subcontral/HightLevelSetPassword.qml</file>
+        <file>fileQml/settings/subcontral/HoursComboBox.qml</file>
+        <file>fileQml/settings/subcontral/ImplantDate.qml</file>
+        <file>fileQml/settings/subcontral/L_Min.qml</file>
+        <file>fileQml/settings/subcontral/LeftMenu.qml</file>
+        <file>fileQml/settings/subcontral/MedicalRecordNumber.qml</file>
+        <file>fileQml/settings/subcontral/MinutesComboBox.qml</file>
+        <file>fileQml/settings/subcontral/MonthsComboBox.qml</file>
+        <file>fileQml/settings/subcontral/PatientHeight.qml</file>
+        <file>fileQml/settings/subcontral/PatientNameInput.qml</file>
+        <file>fileQml/settings/subcontral/PatientWeight.qml</file>
+        <file>fileQml/settings/subcontral/RPM.qml</file>
+        <file>fileQml/settings/subcontral/RunTime.qml</file>
+        <file>fileQml/settings/subcontral/SexSingleSelect.qml</file>
+        <file>fileQml/settings/subcontral/SingleWord.qml</file>
+        <file>fileQml/settings/subcontral/VolumeBar.qml</file>
+        <file>fileQml/settings/subcontral/YearsComboBox.qml</file>
+        <file>fileQml/settings/subpage/DeviceRunInfo.qml</file>
+        <file>fileQml/recordings/RecordPage.qml</file>
+        <file>fileQml/recordings/recordpages/CurrentRunPage.qml</file>
+        <file>fileQml/recordings/recordpages/OperationRecordPage.qml</file>
+        <file>fileQml/recordings/recordpages/RunRecordPage.qml</file>
+        <file>fileQml/recordings/recordpages/WarningRecordPage.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/flow/FlowAverageFlow.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/flow/FlowDataPage.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/flow/FlowMaxFlow.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/flow/FlowMinFlow.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/flowAndSpeed/FlowSpeedAverageFlow.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/flowAndSpeed/FlowSpeedAverageSpeed.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/flowAndSpeed/FlowSpeedDataPage.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/flowAndSpeed/FlowSpeedMaxFlow.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/flowAndSpeed/FlowSpeedMaxSpeed.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/flowAndSpeed/FlowSpeedMinFlow.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/flowAndSpeed/FlowSpeedMinSpeed.qml</file>
+        <file>fileQml/recordings/subcontral/record/operationrecord/OperationDetailsPage.qml</file>
+        <file>fileQml/recordings/subcontral/record/operationrecord/OperationInstructionPage.qml</file>
+        <file>fileQml/recordings/subcontral/record/publicAssembly/RecordContral.qml</file>
+        <file>fileQml/recordings/subcontral/record/publicAssembly/TitleContral.qml</file>
+        <file>fileQml/recordings/subcontral/record/warningrecord/subcontral/TitleRecord.qml</file>
+        <file>fileQml/recordings/subcontral/record/warningrecord/subcontral/WarningRecord.qml</file>
+        <file>fileQml/recordings/subcontral/record/runrecord/RunDetailsPage.qml</file>
+        <file>fileQml/recordings/subcontral/record/runrecord/RightPage.qml</file>
+        <file>fileQml/recordings/subcontral/record/runrecord/TimeSortCombobox.qml</file>
+        <file>fileQml/recordings/subcontral/publicAssembly/CustomButton.qml</file>
+        <file>fileQml/recordings/subcontral/publicAssembly/FlowDataInfo.qml</file>
+        <file>fileQml/recordings/subcontral/publicAssembly/FlowSpeedDataInfo.qml</file>
+        <file>fileQml/recordings/subcontral/record/warningrecord/WarningDetailRecordPage.qml</file>
+        <file>fileQml/recordings/subcontral/record/warningrecord/WarningInstructionPage.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/DateContral.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/FlowSpeedButton.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/ChartDisplayPage.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/ChartBasicDataPage.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/speed/SpeedAverageSpeed.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/speed/SpeedDataPage.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/speed/SpeedMaxSpeed.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/speed/SpeedMinSpeed.qml</file>
+        <file>fileQml/recordings/subcontral/record/runrecord/subcontrol/TitleControl.qml</file>
+        <file>fileQml/recordings/subcontral/record/runrecord/subcontrol/SingleRunRecord.qml</file>
+        <file>fileQml/mainFrame/subcontral/PullListRunRecord.qml</file>
+        <file>fileQml/recordings/subcontral/record/operationrecord/subcontrol/TitleControl.qml</file>
+        <file>fileQml/recordings/subcontral/record/operationrecord/subcontrol/SingleOperationRecord.qml</file>
+        <file>fileQml/mainFrame/subcontral/AlarmList.qml</file>
+        <file>fileQml/mainFrame/assembly/SerialNumber.qml</file>
+        <file>fileQml/mainFrame/assembly/ErrorCode.qml</file>
+        <file>fileQml/recordings/subcontral/publicAssembly/DrawLineControl.qml</file>
+        <file>fileQml/recordings/subcontral/publicAssembly/PublicDefine.qml</file>
+        <file>database/apolloSettingDB.js</file>
+        <file>images/icon_reduce.png</file>
+        <file>images/icon_reduce@2x.png</file>
+        <file>images/icon_warning_more set up.png</file>
+        <file>images/icon_warning_more set up@2x.png</file>
+        <file>images/status=20%.png</file>
+        <file>images/status=40%.png</file>
+        <file>images/status=60%.png</file>
+        <file>images/status=80%.png</file>
+        <file>images/status=100%.png</file>
+        <file>images/status=full_and unused.png</file>
+        <file>images/status=Not_connected.png</file>
+        <file>images/status=run_out.png</file>
+        <file>images/current_down.png</file>
+        <file>images/current_up.png</file>
+        <file>images/default_down.png</file>
+        <file>images/default_up.png</file>
+        <file>images/Select_down.png</file>
+        <file>images/Select_up.png</file>
+        <file>images/icon_Top bar_police(black).png</file>
+        <file>images/icon_Top bar_police(black)@2x.png</file>
+        <file>images/icon_button_reduce@31x.png</file>
+        <file>images/button_slide(current).png</file>
+        <file>images/button_slide(current)@2x.png</file>
+        <file>images/button_slide(current)@3x.png</file>
+        <file>images/button_slide(default).png</file>
+        <file>images/button_slide(default)@2x.png</file>
+        <file>images/button_slide(default)@3x.png</file>
+        <file>images/Dashboard_ground.png</file>
+        <file>images/Dashboard_ground(1).png</file>
+        <file>images/Dashboard_ground(2).png</file>
+        <file>images/Dashboard_ground@2x.png</file>
+        <file>images/Dashboard_ground@2x(1).png</file>
+        <file>images/Dashboard_ground@2x(2).png</file>
+        <file>images/Dashboard_ground@3x.png</file>
+        <file>images/Dashboard_ground@3x(1).png</file>
+        <file>images/Dashboard_ground@3x(2).png</file>
+        <file>images/icon_Bottom navigation bar_homepage(Current).png</file>
+        <file>images/icon_Bottom navigation bar_homepage(Current)(1).png</file>
+        <file>images/icon_Bottom navigation bar_homepage(Current)(2).png</file>
+        <file>images/icon_Bottom navigation bar_homepage(Current)@2x.png</file>
+        <file>images/icon_Bottom navigation bar_homepage(Current)@2x(1).png</file>
+        <file>images/icon_Bottom navigation bar_homepage(Current)@2x(2).png</file>
+        <file>images/icon_Bottom navigation bar_homepage(Current)@3x.png</file>
+        <file>images/icon_Bottom navigation bar_homepage(Current)@3x(1).png</file>
+        <file>images/icon_Bottom navigation bar_homepage(Current)@3x(2).png</file>
+        <file>images/icon_Bottom navigation bar_homepage(Default).png</file>
+        <file>images/icon_Bottom navigation bar_homepage(Default)@2x.png</file>
+        <file>images/icon_Bottom navigation bar_homepage(Default)@3x.png</file>
+        <file>images/icon_Bottom navigation bar_police(current).png</file>
+        <file>images/icon_Bottom navigation bar_police(current)@2x.png</file>
+        <file>images/icon_Bottom navigation bar_police(current)@3x.png</file>
+        <file>images/icon_Bottom navigation bar_police(default).png</file>
+        <file>images/icon_Bottom navigation bar_police(default)(1).png</file>
+        <file>images/icon_Bottom navigation bar_police(default)(2).png</file>
+        <file>images/icon_Bottom navigation bar_police(default)@2x.png</file>
+        <file>images/icon_Bottom navigation bar_police(default)@2x(1).png</file>
+        <file>images/icon_Bottom navigation bar_police(default)@2x(2).png</file>
+        <file>images/icon_Bottom navigation bar_police(default)@3x.png</file>
+        <file>images/icon_Bottom navigation bar_police(default)@3x(1).png</file>
+        <file>images/icon_Bottom navigation bar_police(default)@3x(2).png</file>
+        <file>images/icon_Bottom navigation bar_record(current).png</file>
+        <file>images/icon_Bottom navigation bar_record(current)@2x.png</file>
+        <file>images/icon_Bottom navigation bar_record(current)@3x.png</file>
+        <file>images/icon_Bottom navigation bar_record(default).png</file>
+        <file>images/icon_Bottom navigation bar_record(default)(1).png</file>
+        <file>images/icon_Bottom navigation bar_record(default)@2x.png</file>
+        <file>images/icon_Bottom navigation bar_record(default)@2x(1).png</file>
+        <file>images/icon_Bottom navigation bar_record(default)@3x.png</file>
+        <file>images/icon_Bottom navigation bar_record(default)@3x(1).png</file>
+        <file>images/icon_Bottom navigation bar_set up(current).png</file>
+        <file>images/icon_Bottom navigation bar_set up(current)@2x.png</file>
+        <file>images/icon_Bottom navigation bar_set up(current)@3x.png</file>
+        <file>images/icon_Bottom navigation bar_set up(default).png</file>
+        <file>images/icon_Bottom navigation bar_set up(default)(1).png</file>
+        <file>images/icon_Bottom navigation bar_set up(default)@2x.png</file>
+        <file>images/icon_Bottom navigation bar_set up(default)@2x(1).png</file>
+        <file>images/icon_Bottom navigation bar_set up(default)@3x.png</file>
+        <file>images/icon_Bottom navigation bar_set up(default)@3x(1).png</file>
+        <file>images/icon_button_date.png</file>
+        <file>images/icon_button_date@2x.png</file>
+        <file>images/icon_button_date@3x.png</file>
+        <file>images/icon_button_drop-down .png</file>
+        <file>images/icon_button_drop-down (1).png</file>
+        <file>images/icon_button_drop-down @2x.png</file>
+        <file>images/icon_button_drop-down @2x(1).png</file>
+        <file>images/icon_button_drop-down @3x.png</file>
+        <file>images/icon_button_drop-down @3x(1).png</file>
+        <file>images/icon_button_lock(lock).png</file>
+        <file>images/icon_button_lock(lock)(1).png</file>
+        <file>images/icon_button_lock(lock)@2x.png</file>
+        <file>images/icon_button_lock(lock)@2x(1).png</file>
+        <file>images/icon_button_lock(lock)@3x.png</file>
+        <file>images/icon_button_lock(lock)@3x(1).png</file>
+        <file>images/icon_button_lock(unlock).png</file>
+        <file>images/icon_button_lock(unlock)(1).png</file>
+        <file>images/icon_button_lock(unlock)@2x.png</file>
+        <file>images/icon_button_lock(unlock)@2x(1).png</file>
+        <file>images/icon_button_lock(unlock)@3x.png</file>
+        <file>images/icon_button_lock(unlock)@3x(1).png</file>
+        <file>images/icon_button_more set up.png</file>
+        <file>images/icon_button_more set up(1).png</file>
+        <file>images/icon_button_more set up(2).png</file>
+        <file>images/icon_button_more set up@2x.png</file>
+        <file>images/icon_button_more set up@2x(1).png</file>
+        <file>images/icon_button_more set up@2x(2).png</file>
+        <file>images/icon_button_more set up@3x.png</file>
+        <file>images/icon_button_more set up@3x(1).png</file>
+        <file>images/icon_button_more set up@3x(2).png</file>
+        <file>images/icon_button_plus.png</file>
+        <file>images/icon_button_plus(1).png</file>
+        <file>images/icon_button_plus(2).png</file>
+        <file>images/icon_button_plus(3).png</file>
+        <file>images/icon_button_plus(4).png</file>
+        <file>images/icon_button_plus@2x.png</file>
+        <file>images/icon_button_plus@2x(1).png</file>
+        <file>images/icon_button_plus@2x(2).png</file>
+        <file>images/icon_button_plus@2x(3).png</file>
+        <file>images/icon_button_plus@2x(4).png</file>
+        <file>images/icon_button_plus@3x.png</file>
+        <file>images/icon_button_plus@3x(1).png</file>
+        <file>images/icon_button_plus@3x(2).png</file>
+        <file>images/icon_button_plus@3x(3).png</file>
+        <file>images/icon_button_plus@3x(4).png</file>
+        <file>images/icon_button_reduce.png</file>
+        <file>images/icon_button_reduce@2x.png</file>
+        <file>images/icon_button_reduce@3x.png</file>
+        <file>images/icon_button_return.png</file>
+        <file>images/icon_button_return@2x.png</file>
+        <file>images/icon_button_return@3x.png</file>
+        <file>images/icon_Normal_correct.png</file>
+        <file>images/icon_Normal_correct(1).png</file>
+        <file>images/icon_Normal_correct(2).png</file>
+        <file>images/icon_Normal_correct(3).png</file>
+        <file>images/icon_Normal_correct(4).png</file>
+        <file>images/icon_Normal_correct(5).png</file>
+        <file>images/icon_Normal_correct(6).png</file>
+        <file>images/icon_Normal_correct(7).png</file>
+        <file>images/icon_Normal_correct(8).png</file>
+        <file>images/icon_Normal_correct@2x.png</file>
+        <file>images/icon_Normal_correct@2x(1).png</file>
+        <file>images/icon_Normal_correct@2x(2).png</file>
+        <file>images/icon_Normal_correct@2x(3).png</file>
+        <file>images/icon_Normal_correct@2x(4).png</file>
+        <file>images/icon_Normal_correct@2x(5).png</file>
+        <file>images/icon_Normal_correct@2x(6).png</file>
+        <file>images/icon_Normal_correct@2x(7).png</file>
+        <file>images/icon_Normal_correct@2x(8).png</file>
+        <file>images/icon_Normal_correct@3x.png</file>
+        <file>images/icon_Normal_correct@3x(1).png</file>
+        <file>images/icon_Normal_correct@3x(2).png</file>
+        <file>images/icon_Normal_correct@3x(3).png</file>
+        <file>images/icon_Normal_correct@3x(4).png</file>
+        <file>images/icon_Normal_correct@3x(5).png</file>
+        <file>images/icon_Normal_correct@3x(6).png</file>
+        <file>images/icon_Normal_correct@3x(7).png</file>
+        <file>images/icon_Normal_correct@3x(8).png</file>
+        <file>images/icon_Normal_Not correct.png</file>
+        <file>images/icon_Normal_Not correct(1).png</file>
+        <file>images/icon_Normal_Not correct(2).png</file>
+        <file>images/icon_Normal_Not correct(3).png</file>
+        <file>images/icon_Normal_Not correct(4).png</file>
+        <file>images/icon_Normal_Not correct@2x.png</file>
+        <file>images/icon_Normal_Not correct@2x(1).png</file>
+        <file>images/icon_Normal_Not correct@2x(2).png</file>
+        <file>images/icon_Normal_Not correct@2x(3).png</file>
+        <file>images/icon_Normal_Not correct@2x(4).png</file>
+        <file>images/icon_Normal_Not correct@3x.png</file>
+        <file>images/icon_Normal_Not correct@3x(1).png</file>
+        <file>images/icon_Normal_Not correct@3x(2).png</file>
+        <file>images/icon_Normal_Not correct@3x(3).png</file>
+        <file>images/icon_Normal_Not correct@3x(4).png</file>
+        <file>images/icon_Top bar_police(current).png</file>
+        <file>images/icon_Top bar_police(current)(1).png</file>
+        <file>images/icon_Top bar_police(current)@2x.png</file>
+        <file>images/icon_Top bar_police(current)@2x(1).png</file>
+        <file>images/icon_Top bar_police(current)@3x.png</file>
+        <file>images/icon_Top bar_police(current)@3x(1).png</file>
+        <file>images/icon_Top navigation bar_AC.png</file>
+        <file>images/icon_Top navigation bar_AC@2x.png</file>
+        <file>images/icon_Top navigation bar_AC@3x.png</file>
+        <file>images/icon_Top navigation bar_Alarm elimination.png</file>
+        <file>images/icon_Top navigation bar_Alarm elimination(1).png</file>
+        <file>images/icon_Top navigation bar_Alarm elimination@2x.png</file>
+        <file>images/icon_Top navigation bar_Alarm elimination@2x(1).png</file>
+        <file>images/icon_Top navigation bar_Alarm elimination@3x.png</file>
+        <file>images/icon_Top navigation bar_Alarm elimination@3x(1).png</file>
+        <file>images/icon_Top navigation bar_battery (charging).png</file>
+        <file>images/icon_Top navigation bar_battery (charging)(1).png</file>
+        <file>images/icon_Top navigation bar_battery (charging)@2x.png</file>
+        <file>images/icon_Top navigation bar_battery (charging)@2x(1).png</file>
+        <file>images/icon_Top navigation bar_battery (charging)@3x.png</file>
+        <file>images/icon_Top navigation bar_battery (charging)@3x(1).png</file>
+        <file>images/icon_Top navigation bar_battery (unusemax).png</file>
+        <file>images/icon_Top navigation bar_battery (unusemax)(1).png</file>
+        <file>images/icon_Top navigation bar_battery (unusemax)@2x.png</file>
+        <file>images/icon_Top navigation bar_battery (unusemax)@2x(1).png</file>
+        <file>images/icon_Top navigation bar_battery (unusemax)@3x.png</file>
+        <file>images/icon_Top navigation bar_battery (unusemax)@3x(1).png</file>
+        <file>images/icon_Top navigation bar_battery (usemax).png</file>
+        <file>images/icon_Top navigation bar_battery (usemax)@2x.png</file>
+        <file>images/icon_Top navigation bar_battery (usemax)@3x.png</file>
+        <file>images/icon_Top navigation bar_battery (usemore).png</file>
+        <file>images/icon_Top navigation bar_battery (usemore)@2x.png</file>
+        <file>images/icon_Top navigation bar_battery (usemore)@3x.png</file>
+        <file>images/icon_Top navigation bar_electrical machinery.png</file>
+        <file>images/icon_Top navigation bar_electrical machinery@2x.png</file>
+        <file>images/icon_Top navigation bar_electrical machinery@3x.png</file>
+        <file>images/icon_Top navigation bar_police.png</file>
+        <file>images/icon_Top navigation bar_police@2x.png</file>
+        <file>images/icon_Top navigation bar_police@3x.png</file>
+        <file>images/icon_Top navigation bar_pump.png</file>
+        <file>images/icon_Top navigation bar_pump@2x.png</file>
+        <file>images/icon_Top navigation bar_pump@3x.png</file>
+        <file>images/icon_Top navigation bar_sensor.png</file>
+        <file>images/icon_Top navigation bar_sensor@2x.png</file>
+        <file>images/icon_Top navigation bar_sensor@3x.png</file>
+        <file>images/on_off=off.png</file>
+        <file>images/on_off=off(1).png</file>
+        <file>images/on_off=off(2).png</file>
+        <file>images/on_off=off(3).png</file>
+        <file>images/on_off=off@2x.png</file>
+        <file>images/on_off=off@2x(1).png</file>
+        <file>images/on_off=off@2x(2).png</file>
+        <file>images/on_off=off@2x(3).png</file>
+        <file>images/on_off=off@3x.png</file>
+        <file>images/on_off=off@3x(1).png</file>
+        <file>images/on_off=off@3x(2).png</file>
+        <file>images/on_off=off@3x(3).png</file>
+        <file>images/on_off=on.png</file>
+        <file>images/on_off=on(1).png</file>
+        <file>images/on_off=on(2).png</file>
+        <file>images/on_off=on(3).png</file>
+        <file>images/on_off=on@2x.png</file>
+        <file>images/on_off=on@2x(1).png</file>
+        <file>images/on_off=on@2x(2).png</file>
+        <file>images/on_off=on@2x(3).png</file>
+        <file>images/on_off=on@3x.png</file>
+        <file>images/on_off=on@3x(1).png</file>
+        <file>images/on_off=on@3x(2).png</file>
+        <file>images/on_off=on@3x(3).png</file>
+        <file>fileQml/mainFrame/subpage/CloseMessagePage.qml</file>
+        <file>images/splashScreen.png</file>
+        <file>images/welcome.png</file>
+        <file>fileQml/mainFrame/assembly/PublicCode.qml</file>
+        <file>images/off=off.png</file>
+        <file>images/off=off-1.png</file>
+        <file>images/off=on.png</file>
+        <file>images/off=on-1.png</file>
+        <file>fileQml/settings/subcontral/LockTimeComboBox.qml</file>
+        <file>images/lightcharge.png</file>
+        <file>images/icon_Status_bar_Alarm.png</file>
+        <file>images/icon_Status_bar_Alarm cancellation.png</file>
+        <file>images/icon_Status_bar_Alarm(black).png</file>
+        <file>fileQml/advancedSettings/AdvancedSettingsMenu.qml</file>
+        <file>fileQml/advancedSettings/SoftwareUpdate.qml</file>
+        <file>fileQml/advancedSettings/SensorCalibration.qml</file>
+        <file>fileQml/advancedSettings/BatteryInformation.qml</file>
+        <file>fileQml/advancedSettings/subcontrol/BackButton.qml</file>
+        <file>fileQml/advancedSettings/subcontrol/MenuText.qml</file>
+        <file>fileQml/advancedSettings/subcontrol/ProgressCircle.qml</file>
+        <file>scripts/entry.sh</file>
+        <file>fileQml/advancedSettings/MotorInformation.qml</file>
+        <file>images/status=20%(unused).png</file>
+        <file>images/status=40%(unused).png</file>
+        <file>images/status=60%(unused).png</file>
+        <file>images/status=80%(unused).png</file>
+        <file>images/status=100(unused).png</file>
+        <file>fileQml/settings/subcontral/DevicePowerPanelSoftwareVersion.qml</file>
+        <file>fileQml/Simulator.qml</file>
+        <file>fileQml/mainFrame/subpage/BusyIndicatorPage.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/CurRunDrawFlowSpeedContral.qml</file>
+        <file>fileQml/recordings/subcontral/currentRun/DrawFlowSpeedContral.qml</file>
+    </qresource>
+</RCC>
